@@ -37,8 +37,17 @@ h2 {
 
 section {
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
+}
+
+section.last {
+  min-height: auto;
+}
+
+.slide-cover {
+  background: rgba(255, 255, 255, 0.5);
   padding: 24px 0;
+  min-height: 400px;
 }
 
 .container {
@@ -47,7 +56,7 @@ section {
 }
 
 section.odd {
-  background: #f7f0e0;
+  background-color: #f7f0e0;
 }
 
 h3 {
@@ -68,19 +77,37 @@ h3 {
   background: url('../img/map.png');
 }
 
+.slide-2-wrapper {
+  background: url('../img/chara-info.png');
+}
+
+.slide-3-wrapper {
+  background: url('../img/realtime.png');
+}
+
+.slide-4-wrapper {
+  background: url('../img/communication.png');
+}
+
+.slide-5-wrapper {
+  background: url('../img/ontime.png');
+}
+
+.slide-6-wrapper {
+  background: url('../img/toplogo.png');
+}
+
 .slide-wrapper {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.slide-1 {
-  background: hsla(0, 0%, 100%, 0.95);
-}
-
 .slide-content {
   padding: 32px;
-  border-radius: 24px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  min-height: 440px;
 }
 
 @media(max-width: 680px) {
@@ -107,4 +134,52 @@ h3 {
   width: 100%;
   max-width: 500px;
   margin-top: 16px;
+}
+
+.last a.game-start {
+  display: block;
+  color: white;
+  background-color: #f3aa23;
+  width: 400px;
+  height: 80px;
+  margin: 48px auto 36px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 1.8em;
+  border-radius: 8px;
+  transition: background-color .3s;
+}
+
+.last a.game-start:hover {
+  background-color: #c48a1e;
+}
+
+.last a.learn-more {
+  color: #008cff;
+  text-decoration: none;
+  font-size: 1.1em;
+  display: block;
+  text-align: center;
+  height: 32px;
+  line-height: 32px;
+  width: 350px;
+  margin: 0 auto;
+}
+
+.last a.learn-more:hover {
+  text-decoration: underline;
+  color: #1b5f96;
+}
+
+.last .tweet-container {
+  text-align: center;
+  margin: 60px 0 48px;
+}
+
+footer {
+  background: #efefef;
+  border-top: 1px solid #999;
+  padding: 96px 0;
+  text-align: center;
+  color: #666;
 }

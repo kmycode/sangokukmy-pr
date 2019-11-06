@@ -11,51 +11,159 @@
     <script src="js/jquery.scrollslide.js"></script>
     <script>
     $(document).ready(function(){
+      var first = 100;
+      var size = 540;
       $('.slide-1').scrollSlide({
         direction   : 'left',
-        scrollstart : 100,
+        scrollstart : first,
+        slideback   : false
+      });
+      $('.slide-2').scrollSlide({
+        direction   : 'right',
+        scrollstart : first + size * 1,
+        slideback   : false
+      });
+      $('.slide-3').scrollSlide({
+        direction   : 'left',
+        scrollstart : first + size * 2,
+        slideback   : false
+      });
+      $('.slide-4').scrollSlide({
+        direction   : 'right',
+        scrollstart : first + size * 3,
+        slideback   : false
+      });
+      $('.slide-5').scrollSlide({
+        direction   : 'left',
+        scrollstart : first + size * 4,
+        slideback   : false
+      });
+      $('.slide-6').scrollSlide({
+        direction   : 'right',
+        scrollstart : first + size * 5,
         slideback   : false
       });
     });
     </script>
   </head>
   <body>
- 
+
     <header>
       <div class="container">
         <h1>三国志NET KMY Version</h1>
         <h2>オンライン × チーム協力</h2>
       </div>
     </header>
- 
+
     <section class="even slide-wrapper slide-1-wrapper">
-      <div class="container slide-content slide-1">
-        <h3>戦略を組み立てる</h3>
-        <div class="message">
-          どの国と同盟を結ぼうか？どの国に侵攻しようか？<br>
-          どの都市を内政しようか？どこに建築物を建てようか？<br>
-          三国志NET KMY Versionは、<strong>戦略</strong>のゲームです。毎回変わる地形のうえでは、外交、内政、戦争、強化といった長期にわたる確固たる戦略が重要になります。<br>
-        </div>
-        <div class="image">
-          <img src="img/consider.jpg"/>
-        </div>
-        <!--
-        <div class="slide">
-          <iframe src="//www.slideshare.net/slideshow/embed_code/key/7uNxosVzNrHMaL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
-        </div>
-        -->
-      </div>
-    </section>
- 
-    <section class="odd">
-      <div class="container slide-content slide-2">
-        <h3>戦略ゲーム</h3>
-        <div class="message">あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ</div>
-        <div class="slide">
-          <iframe src="//www.slideshare.net/slideshow/embed_code/key/7uNxosVzNrHMaL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+      <div class="slide-cover">
+        <div class="container slide-content slide-1">
+          <h3>戦略を組み立てる</h3>
+          <div class="message">
+            どの国と同盟を結ぼうか？どの国に侵攻しようか？<br>
+            どの都市を内政しようか？どこに建築物を建てようか？<br>
+            三国志NET KMY Versionは、<strong>戦略</strong>のゲームです。毎回変わる地形のうえでは、外交、内政、戦争、強化といった長期にわたる確固たる戦略が重要になります。<br>
+          </div>
+          <div class="image">
+            <img src="img/consider.jpg"/>
+          </div>
         </div>
       </div>
     </section>
- 
+
+    <section class="odd slide-wrapper slide-2-wrapper">
+      <div class="slide-cover">
+        <div class="container slide-content slide-2">
+          <h3>個性ある武将を育成</h3>
+          <div class="message">
+            出身は何？どの能力が高い？<br>
+            どの陣形を使う？何を重視して行動する？<br>
+            あなたは１人の武将となって全土を駆け回ります。多彩な要素とあなたの行動によって、国もあなた自身も成長します。
+          </div>
+          <div class="image">
+            <img src="img/attributes.jpg"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="even slide-wrapper slide-3-wrapper">
+      <div class="slide-cover">
+        <div class="container slide-content slide-3">
+          <h3>リアルタイムで動く戦況</h3>
+          <div class="message">
+            どの都市が落ちた？内政はどうなっている？<br>
+            現在の守備と滞在武将は誰？<br>
+            常に最新の情報が画面に反映されるため、現状に合った機敏な戦略をその場で練ることができます。どのような小さな情報の更新も見逃すことなく、常にチェックできます。
+          </div>
+          <div class="image">
+            <img src="img/war.jpg"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="odd slide-wrapper slide-4-wrapper">
+      <div class="slide-cover">
+        <div class="container slide-content slide-4">
+          <h3>他の武将と交流</h3>
+          <div class="message">
+            ゲーム内チャットも完備。自分の国の武将同士で作戦の相談をする「自国」だけでなく、ゲームに登録している全員で交流できる「全国」もあります。<br>
+            自国内でのコミュニケーションは、一度決めた作戦の遂行に向けて、大きな鍵を握ります。「個人」で私信も可能。「全国」では、アットホームな雰囲気を感じ取ることができます。
+          </div>
+          <div class="image">
+            <img src="img/letters.jpg"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="even slide-wrapper slide-5-wrapper">
+      <div class="slide-cover">
+        <div class="container slide-content slide-5">
+          <h3>平時は毎日５分、戦争中は数時間</h3>
+          <div class="message">
+            ゲームは、内政と戦争の繰り返しです。内政のときから、戦争は始まっています。<br>
+            ゲームには毎日ログインする必要がありますが、内政をしている間は5〜10分あれば一通りの作業は完了します。戦争中は数時間にわたってログインし続け、状況を見ながら臨機応変に対応することによって最大限のパフォーマンスを得ることができます。<br>
+            他のゲームや作業の隙間時間にいかがでしょうか。
+          </div>
+          <div class="image">
+            <img src="img/gametime.jpg"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="odd slide-wrapper slide-6-wrapper">
+      <div class="slide-cover">
+        <div class="container slide-content slide-6">
+          <h3>もっと知る</h3>
+          <div class="message">
+            以下のスライドより、ゲームの概要を掴むことができます。<br>
+            三国志NET KMY Versionの要素は数多くあり、全てを紹介するにはページ数が足りません。もっと知りたい場合は、下にある「もっと学習する」より他のスライドも読むことができます。<br>
+            説明書を直接読むことで、さらに詳しく知ることができます。
+          </div>
+          <div class="slide">
+            <iframe src="//www.slideshare.net/slideshow/embed_code/key/7uNxosVzNrHMaL" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="last">
+      <div class="container">
+        <a class="game-start" href="https://sangoku.kmycode.net/">ゲームを始める</a>
+        <a class="learn-more" href="https://w.atwiki.jp/sangokukmy9/pages/105.html">もっと学習する</a>
+        <div class="tweet-container">
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" data-size="large">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      (c) maccyu<br>
+      Administrator KMY (雪あすか)
+    </footer>
+
   </body>
 </html>
